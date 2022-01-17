@@ -1,0 +1,238 @@
+body{
+    background-color: rgb(255, 255, 255);
+    text-align: center;
+    font-family: 'logo';
+}
+
+header{
+    background: white;
+    color: black;
+}
+
+#scroll_to_top {
+    position: fixed;
+    width: 25px;
+    height: 25px;
+    bottom: 50px;
+    right: 30px;
+}
+
+#scroll_to_top img {
+    width: 25px;
+}
+
+nav{
+    min-height: 10vh;
+    display: flex;
+    align-items: center;
+    padding-bottom: 5%;
+}
+
+nav ul{
+    display: flex;
+    flex: 10 1 40rem;
+    justify-content: space-around;
+    align-items: center;
+    list-style: none;
+}
+
+nav li a{
+    font-size: 4.5vmin;
+    text-decoration: none;
+    color: #f39c12;
+    padding: 5px;
+}
+
+header li a:hover{
+    box-shadow: 0px 0px 2px 2px;
+}
+
+#logo{
+    margin-top: 3%;
+    position: fixed;
+    text-align: left;
+    width: 15%;
+}
+
+.candidature{
+    font-size: 3.5vmin;
+    text-decoration: none;
+    border: 1px solid #e22c12;
+    border-radius: 5px;
+    padding: 5px;
+    color: #e22c12;
+    animation-name: fondu;
+    animation-duration: 1s;
+}
+
+.candidature:hover{
+    background-color: #e22c12;
+    color: white;
+}
+
+.sanitaire{
+    text-align: left;
+}
+
+#reservation{
+    text-decoration: none;
+}
+
+@font-face {
+    font-family: logo;
+    src: url(./Agency_FB.ttf);
+}
+
+.div-logo{
+    background-image: url(../IMAGES/Fond-logo.jpg);
+    background-size: cover;
+    border: 1px solid black;
+    margin-bottom: 5%;
+}
+
+.autreP>li>a:hover{
+    color: rgb(189, 189, 189);
+}
+
+.img{
+    font-size: 0;
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: auto;
+}
+
+h1{
+    color: #e22c12;
+    text-align: center;
+}
+
+h2{
+    color: #f39c12;
+}
+
+.logo{
+    align-self: center;
+    margin: 0;
+}
+
+.grid{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    height: 250vmin;
+    margin: 0;
+}
+
+.txt{
+    margin: 0;
+    font-size: 3vmin;
+}
+
+
+
+#decouverte{
+    height: 3px;
+    grid-column: 1;
+    grid-row: 1;
+}
+
+#horaires{
+    height: 80%;
+    width: 100%;
+    grid-column: 2;
+    grid-row: 2;
+    background-image: url(../IMAGES/DATES.png);
+    background-size: cover;
+}
+
+#locaux{
+    height: 3px;
+    grid-column: 1;
+    grid-row: 3;
+    padding-top: 5%;
+}
+
+#covid{
+    height: 3px;
+    grid-column: 2;
+    grid-row: 4;
+}
+
+#food-trucks{
+    grid-column: 2;
+    grid-row: 1;
+    background-image: url(../IMAGES/food-trucks.jpg);
+    
+}
+
+#plat-colore{
+    grid-column: 1;
+    grid-row: 2;
+    background-image: url(../IMAGES/plat-colore.jpg);
+}
+
+#femme-food-truck{
+    grid-column: 2;
+    grid-row: 3;
+    background-image: url(../IMAGES/femme-food-truck.jpg);
+}
+
+#employe-masque{
+    grid-column: 1;
+    grid-row: 4;
+    background-image: url(../IMAGES/serveuse.jpg);
+}
+
+footer{
+    margin: 1rem 0 0 0;
+    height: 10vmin;
+}
+
+footer ul{
+    padding: 0;
+    list-style: none;
+    text-align: center;
+    font-size: 3vmin;
+    line-height: 3vmin;
+    margin-bottom: 0;
+    background-color: #e22c12;
+    margin-top: 0;
+}
+
+footer li {
+    padding: 0 10px;
+    display: inline;
+}
+
+footer li a {
+    color: white;
+    text-decoration: none;
+}
+
+@media (max-width: 1500px){
+    #horaires{
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position-x: 2vw;
+        background-position-y: 3vh;
+    }
+}
+
+@media (max-width: 1200px){
+    .grid{
+        display: inline;
+        height: 3px;
+    }
+    div.grid>div{
+        display: inline-block;
+        min-height: 65vmin;
+        height: 100%;
+    }
+}
+
+@media (max-width: 500px){
+    .logo{
+        width: 75%;
+        height: 75%;
+    }
+}

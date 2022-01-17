@@ -1,0 +1,96 @@
+body{
+    background-color: rgb(255, 255, 255);
+    text-align: center;
+    font-family: 'logo';
+}
+
+header{
+    background: white;
+    color: black;
+}
+
+nav{
+    min-height: 10vh;
+    display: flex;
+    align-items: center;
+    padding-bottom: 5%;
+    margin: 0;
+}
+
+nav ul{
+    display: flex;
+    flex: 10 1 40rem;
+    justify-content: space-around;
+    align-items: center;
+    list-style: none;
+}
+
+nav li a{
+    font-size: 4.5vmin;
+    text-decoration: none;
+    color: #f39c12;
+    padding: 5px;
+}
+
+@font-face {
+    font-family: logo;
+    src: url(./Agency_FB.ttf);
+}
+
+header li a:hover{
+    box-shadow: 0px 0px 2px 2px;
+}
+
+
+
+#logo{
+    margin-top: 3%;
+    text-align: left;
+    width: 25%;
+}
+
+form{
+    text-align: left;
+    color: #f39c12;
+}
+
+fieldset{
+    border: 1px solid #f39c12;
+    background-color: #fff1da;
+    font-size: 3vmin;
+}
+
+fieldset button{
+    font-family: 'logo';
+    color: #f39c12;
+    padding: 10px;
+    background-color: #fff1da;
+    border-color: #f39c12;
+    border-radius: 10%;
+}
+
+footer{
+    margin: 1rem 0 0 0;
+    height: 10vmin;
+}
+
+footer ul{
+    padding: 0;
+    list-style: none;
+    text-align: center;
+    font-size: 3vmin;
+    line-height: 3vmin;
+    margin-bottom: 0;
+    background-color: #e22c12;
+    margin-top: 0;
+}
+
+footer li {
+    padding: 0 10px;
+    display: inline;
+}
+
+footer li a {
+    color: white;
+    text-decoration: none;
+}
